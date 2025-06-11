@@ -9,6 +9,8 @@ import LoginPage from "./pages/LoginPage";
 import NoticePage from "./pages/NoticePage";
 import EventsPage from "./pages/EventsPage";
 import StudentPage from "./pages/StudentPage";
+import ComplaintPage from "./pages/ComplaintPage";
+
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
       <Route path="/hall-layout" element={<HallLayoutPage />} />
       <Route path="/events" element={<EventsPage />} />
       <Route path="/student"element={<StudentPage/>}/>
+      <Route path="/complaint" element={<ComplaintPage />} />
+      
       
 
     </Routes>
