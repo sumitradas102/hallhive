@@ -16,6 +16,7 @@ import AdminDashboardPage from "./pages/AdminDashboardPage";
 import AdminComplaintPage from "./pages/AdminComplaintPage";
 import AdminNoticePage from "./pages/AdminNoticePage";
 import AdminEventPage from "./pages/AdminEventPage";
+import AllowedStudentsPage from "./pages/AllowedStudentsPage";
 function App() {
   return (
     <Routes>
@@ -38,6 +39,7 @@ function App() {
       <Route path="/admin/complaints" element={<AdminComplaintPage />} />
       <Route path="/admin/notices" element={<AdminNoticePage />} />
       <Route path="/admin/events" element={<AdminEventPage />} />
+      <Route path="/allowedStudentUpload" element={<AllowedStudentsPage/>}/>
     </Routes>
   );
 }
