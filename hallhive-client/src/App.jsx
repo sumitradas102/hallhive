@@ -10,6 +10,7 @@ import NoticePage from "./pages/NoticePage";
 import EventsPage from "./pages/EventsPage";
 import StudentPage from "./pages/StudentPage";
 import ComplaintPage from "./pages/ComplaintPage";
+import RoomApplyPage from "./pages/RoomApplyPage";
 
 
 
@@ -29,6 +30,7 @@ function App() {
       <Route path="/events" element={<EventsPage />} />
       <Route path="/student"element={<StudentPage/>}/>
       <Route path="/complaint" element={<ComplaintPage />} />
+      <Route path="/room-application"element={<RoomApplyPage/>}/>
       
       
 
