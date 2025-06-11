@@ -12,7 +12,7 @@ import StudentPage from "./pages/StudentPage";
 import ComplaintPage from "./pages/ComplaintPage";
 import RoomApplyPage from "./pages/RoomApplyPage";
 import FaqChatPage from "./pages/FaqChatPage";
-
+import AdminDashboardPage from "./pages/AdminDashboardPage";
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
       <Route path="/complaint" element={<ComplaintPage />} />
       <Route path="/room-application"element={<RoomApplyPage/>}/>
       <Route path="/faq" element={<FaqChatPage />} />
-      
+      <Route path="/admin" element={<AdminDashboardPage />} />
 
     </Routes>
   );
