@@ -14,7 +14,7 @@ import RoomApplyPage from "./pages/RoomApplyPage";
 import FaqChatPage from "./pages/FaqChatPage";
 import AdminDashboardPage from "./pages/AdminDashboardPage";
 import AdminComplaintPage from "./pages/AdminComplaintPage";
-
+import AdminNoticePage from "./pages/AdminNoticePage";
 function App() {
   return (
     <Routes>
@@ -35,7 +35,7 @@ function App() {
       <Route path="/faq" element={<FaqChatPage />} />
       <Route path="/admin" element={<AdminDashboardPage />} />
       <Route path="/admin/complaints" element={<AdminComplaintPage />} />
-      
+      <Route path="/admin/notices" element={<AdminNoticePage />} />
     </Routes>
   );
 }
