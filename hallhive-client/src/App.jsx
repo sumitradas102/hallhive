@@ -8,9 +8,13 @@ import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
 import NoticePage from "./pages/NoticePage";
 import EventsPage from "./pages/EventsPage";
+import StudentPage from "./pages/StudentPage";
+
+
 function App() {
   return (
     <Routes>
+
       <Route path="/" element={<HomePage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/about" element={<AboutPage />} />
@@ -21,6 +25,8 @@ function App() {
 
       <Route path="/hall-layout" element={<HallLayoutPage />} />
       <Route path="/events" element={<EventsPage />} />
+      <Route path="/student"element={<StudentPage/>}/>
+      
 
     </Routes>
   );
