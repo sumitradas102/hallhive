@@ -6,6 +6,8 @@ import ContactPage from "./pages/ContactPage";
 import HallLayoutPage from "./pages/HallLayoutPage";
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
+import NoticePage from "./pages/NoticePage";
+import EventsPage from "./pages/EventsPage";
 function App() {
   return (
     <Routes>
@@ -15,8 +17,10 @@ function App() {
       <Route path="/administration" element={<AdministrationPage />} /> 
       <Route path="/contact"  element={<ContactPage/>}/>
       <Route path="/signup"element={<SignupPage/>}/>
+      <Route path="/notice" element={<NoticePage />} />
 
       <Route path="/hall-layout" element={<HallLayoutPage />} />
+      <Route path="/events" element={<EventsPage />} />
 
     </Routes>
   );
