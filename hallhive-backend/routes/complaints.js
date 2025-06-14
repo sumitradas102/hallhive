@@ -1,6 +1,7 @@
 const express = require('express');
 const db = require('../db');
 const router = express.Router();
+require('dotenv').config(); // Load env variables at the top
 
 /**
  * STUDENT: Submit a complaint
