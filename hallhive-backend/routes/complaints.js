@@ -46,7 +46,7 @@ router.get('/mine/:user_id', async (req, res) => {
 });
 
 /**
- * ADMIN: Get all complaints (with student info, mask if anonymous)
+ * ADMIN: Get now all the complaints (with student info, mask if anonymous)
  */
 router.get('/', async (req, res) => {
   try {
