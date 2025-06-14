@@ -113,7 +113,7 @@ export default function LoginPage() {
                 required
                 value={form.registrationNumber}
                 onChange={handleChange}
-                className="mt-1 border border-yellow-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
+                className="text-white mt-1 border border-yellow-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
               />
             </label>
           )}
@@ -126,7 +126,7 @@ export default function LoginPage() {
               value={form.password}
               onChange={handleChange}
               minLength={6}
-              className="mt-1 border border-yellow-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
+              className="text-white mt-1 border border-yellow-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
             />
           </label>
           <button
