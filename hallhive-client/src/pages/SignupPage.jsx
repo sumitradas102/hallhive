@@ -77,6 +77,12 @@ export default function SignupPage() {
               Shahjalal University of Science and Technology, Sylhet
             </span>
           </div>
+          <Link
+              to="/"
+              className="ml-auto bg-yellow-400 hover:bg-yellow-300 text-black font-heading font-semibold text-base px-8 py-3 rounded-xl shadow transition"
+            >
+              Home
+          </Link>
         </div>
       </header>
       {/* Main Form */}

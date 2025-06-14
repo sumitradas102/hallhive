@@ -72,13 +72,23 @@ export default function RoomApprove() {
               style={{ animationDelay: `${idx * 80}ms`, animationFillMode: "backwards" }}
             >
               <div className="space-y-1 flex-1">
-                <p><span className="font-bold text-[#23395d]">Student:</span> {app.name}</p>
-                <p><span className="font-bold text-[#23395d]">ID:</span> {app.registrationNumber}</p>
-                <p><span className="font-bold text-[#23395d]">Room:</span> {app.room_no}</p>
-                <p>
-                  <span className="font-bold text-[#23395d]">Block:</span> {app.block} |{" "}
-                  <span className="font-bold text-[#23395d]">Floor:</span> {app.floor}
+                <p><span className="font-bold text-[#23395d]">Student:</span> {' '}
+                  <span className="text-[#23395d]">{app.name}</span>
                 </p>
+               
+                <p><span className="font-bold text-[#23395d]">ID:</span> {' '}
+                <span className="text-[#23395d]">{app.registrationNumber}</span></p>
+                <p><span className="font-bold text-[#23395d]">Room:</span> {' '}
+                <span className="text-[#23395d]">{app.room_no}</span></p>
+                <p>
+                  <span className="font-bold text-[#23395d]">Block:</span> {' '} 
+                  <span className="text-[#23395d]">{app.block}</span> |{" "}
+
+                  <span className="font-bold text-[#23395d]">Floor:</span> {' '}
+                  
+                  <span className="text-[#23395d]">{app.floor}</span>
+                </p>
+                
                 <p>
                   <span className="font-bold text-[#23395d]">Applied At:</span>{" "}
                   <span className="text-gray-700">{new Date(app.applied_at).toLocaleString()}</span>
