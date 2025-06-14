@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../db');
+require('dotenv').config(); // Load env variables at the top
 
 // List all rooms and their current occupancy
 router.get('/', async (req, res) => {
