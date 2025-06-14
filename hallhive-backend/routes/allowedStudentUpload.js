@@ -45,7 +45,7 @@ router.delete('/:registrationNumber', async (req, res) => {
 router.get('/', async (req, res) => {
     try {
         const [rows] = await db.query(
-            "SELECT name, email, registrationNumber FROM allowed_students"
+            "SELECT name, email, registrationNumber, room_no FROM allowed_students"
         );
         res.json(rows);
     } catch (err) {
@@ -56,7 +56,7 @@ router.get('/', async (req, res) => {
 // Export allowlist as CSV
 router.get('/export-csv', async (req, res) => {
     try {
-        const [rows] = await db.query("SELECT name, email, registrationNumber FROM allowed_students");
+        const [rows] = await db.query("SELECT name, email, registrationNumber, room_no FROM allowed_students");
         const parser = new Parser();
         const csvData = parser.parse(rows);
         res.header('Content-Type', 'text/csv');
@@ -67,7 +67,7 @@ router.get('/export-csv', async (req, res) => {
     }
 });
 
-// Import allowlist from CSV
+// Import allowlist from CSV (handles all four fields)
 router.post('/import', upload.single('file'), async (req, res) => {
     if (!req.file) return res.status(400).json({ message: "No file uploaded" });
     const results = [];
@@ -79,8 +79,13 @@ router.post('/import', upload.single('file'), async (req, res) => {
             for (const item of results) {
                 try {
                     await db.query(
-                        "INSERT INTO allowed_students (name, email, registrationNumber) VALUES (?, ?, ?)",
-                        [item.name || item.Name, item.email || item.Email, item.registrationNumber || item['Registration No']]
+                        "INSERT INTO allowed_students (name, email, registrationNumber, room_no) VALUES (?, ?, ?, ?)",
+                        [
+                            item.name || item.Name,
+                            item.email || item.Email,
+                            item.registrationNumber || item['Registration No'],
+                            item.room_no || item['Room no'] || item['Room No']
+                        ]
                     );
                     success++;
                 } catch (err) {
