@@ -1,6 +1,6 @@
 CREATE DATABASE hallhive;
-CREATE USER 'halluser'@'localhost' IDENTIFIED BY 'Sumaiya22shafa44@sql';
-GRANT ALL PRIVILEGES ON hallhive.* TO 'halluser'@'localhost';
+CREATE USER '(name user)'@'localhost' IDENTIFIED BY 'Your Sql password';
+GRANT ALL PRIVILEGES ON hallhive.* TO '(name user)'@'localhost';
 FLUSH PRIVILEGES;
 
 USE hallhive;
