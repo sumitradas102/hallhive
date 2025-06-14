@@ -47,7 +47,7 @@ router.post('/signup', async (req, res) => {
     }
 });
 
-// Login (student/admin)
+// Login to (student/admin)
 router.post('/login', async (req, res) => {
     try {
         const { email, registrationNumber, password, role } = req.body;
