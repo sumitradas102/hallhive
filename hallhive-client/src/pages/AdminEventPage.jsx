@@ -59,7 +59,7 @@ export default function AdminEventPage() {
             type="text"
             name="title"
             placeholder="Event Title"
-            className="border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none flex-1"
+            className="bg-yellow-50 text-black placeholder-yellow-600 border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none flex-1"
             value={form.title}
             onChange={handleChange}
             required
@@ -67,7 +67,7 @@ export default function AdminEventPage() {
           <input
             type="date"
             name="date"
-            className="border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none flex-1"
+            className="bg-yellow-50 text-black placeholder-yellow-600 border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none flex-1"
             value={form.date}
             onChange={handleChange}
             required
@@ -78,7 +78,7 @@ export default function AdminEventPage() {
             type="text"
             name="location"
             placeholder="Location"
-            className="border-2 border-green-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-green-300 focus:outline-none flex-1"
+            className="bg-yellow-50 text-black placeholder-yellow-600 border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none flex-1"
             value={form.location}
             onChange={handleChange}
           />
@@ -86,7 +86,7 @@ export default function AdminEventPage() {
             type="text"
             name="attachment"
             placeholder="Attachment URL"
-            className="border-2 border-green-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-green-300 focus:outline-none flex-1"
+            className="bg-yellow-50 text-black placeholder-yellow-600 border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none flex-1"
             value={form.attachment}
             onChange={handleChange}
           />
@@ -94,7 +94,7 @@ export default function AdminEventPage() {
         <textarea
           name="description"
           placeholder="Description"
-          className="border-2 border-yellow-100 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-200 focus:outline-none min-h-[64px] resize-y"
+          className="bg-yellow-50 text-black placeholder-yellow-600 border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none min-h-[64px] resize-y"
           value={form.description}
           onChange={handleChange}
         />
