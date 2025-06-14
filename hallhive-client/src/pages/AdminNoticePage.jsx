@@ -55,7 +55,7 @@ export default function AdminNoticePage() {
         <input
           type="text"
           placeholder="Notice Title"
-          className="border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none text-lg font-semibold"
+          className="bg-yellow-50 text-black placeholder-yellow-600 border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none flex-1"
           value={form.title}
           onChange={(e) => setForm({ ...form, title: e.target.value })}
           required
@@ -63,7 +63,7 @@ export default function AdminNoticePage() {
 
         <textarea
           placeholder="Write the content of the notice..."
-          className="border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-200 focus:outline-none min-h-[72px] resize-y"
+          className="bg-yellow-50 text-black placeholder-yellow-600 border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none min-h-[72px] resize-y"
           value={form.content}
           onChange={(e) => setForm({ ...form, content: e.target.value })}
           required
