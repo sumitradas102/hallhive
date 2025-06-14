@@ -3,8 +3,11 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const db = require('../db');
 const router = express.Router();
+require('dotenv').config(); // Load env variables at the top
 
-const JWT_SECRET = process.env.JWT_SECRET || 'hallhive_secret';
+
+const JWT_SECRET = process.env.JWT_SECRET;
+if (!JWT_SECRET) throw new Error('JWT_SECRET is not set in environment variables');
 
 // Student Signup
 router.post('/signup', async (req, res) => {
