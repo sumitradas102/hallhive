@@ -183,7 +183,7 @@ const AllowedStudentsPage = () => {
             type="text"
             name="name"
             placeholder="Name"
-            className="border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none flex-1"
+            className="bg-yellow-50 text-black placeholder-yellow-600 border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none flex-1"
             value={form.name}
             onChange={onFormChange}
             required
@@ -192,7 +192,7 @@ const AllowedStudentsPage = () => {
             type="email"
             name="email"
             placeholder="Email"
-            className="border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none flex-1"
+            className="bg-yellow-50 text-black placeholder-yellow-600 border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none flex-1"
             value={form.email}
             onChange={onFormChange}
             required
@@ -201,7 +201,7 @@ const AllowedStudentsPage = () => {
             type="text"
             name="registrationNumber"
             placeholder="Registration Number"
-            className="border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none flex-1"
+            className="bg-yellow-50 text-black placeholder-yellow-600 border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none flex-1"
             value={form.registrationNumber}
             onChange={onFormChange}
             required
@@ -210,7 +210,7 @@ const AllowedStudentsPage = () => {
             type="text"
             name="room_no"
             placeholder="Room No"
-            className="border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none flex-1"
+            className="bg-yellow-50 text-black placeholder-yellow-600 border-2 border-yellow-200 px-4 py-2 rounded-xl focus:ring-2 focus:ring-yellow-300 focus:outline-none flex-1"
             value={form.room_no}
             onChange={onFormChange}
             required
