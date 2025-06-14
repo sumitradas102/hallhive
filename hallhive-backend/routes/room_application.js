@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const db = require('../db');
 const authenticate = require('../middleware/authenticate');
+require('dotenv').config(); // Load env variables at the top
+
 
 router.post('/', authenticate('student'), async (req, res) => {
   try {
